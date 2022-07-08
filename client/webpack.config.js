@@ -17,7 +17,6 @@ module.exports = () => {
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
-      publicPath: ''
     },
     plugins: [
       new HtmlWebpackPlugin({
@@ -27,8 +26,12 @@ module.exports = () => {
       new WorkboxPlugin.GenerateSW(),
       new WebpackPwaManifest({
         name: 'Just Another Text Editor',
-        short_name: 'JATE',
-        description: 'A text editor that runs in the browser',
+        short_name: 'J.A.T.E',
+        description: 'Takes notes with JavaScript syntax highlighting!',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
+        publicPath: '/',
+        start_url: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
