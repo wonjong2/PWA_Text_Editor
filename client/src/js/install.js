@@ -6,6 +6,7 @@ let deferredPrompt = null;
 window.addEventListener('beforeinstallprompt', (event) => {
     console.log('👍', 'beforeinstallprompt', event);
     deferredPrompt = event;
+    // Display 'Install!' button
     butInstall.classList.toggle('hidden', false);
 });
 
@@ -19,6 +20,7 @@ butInstall.addEventListener('click', async (event) => {
     // Wait for the user to respond to the prompt
     deferredPrompt.userChoice.then((choiceResult) => {
         if (choiceResult.outcome === 'accepted') {
+            // Hide 'Install!' button
             butInstall.classList.toggle('hidden', true);
         }
     });
