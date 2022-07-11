@@ -32,8 +32,3 @@ window.addEventListener('appinstalled', (event) => {
     deferredPrompt = null;
     console.log('👍', 'appinstalled', event);
 });
-
-// If the Web App has been installed already, 'Install!' button will not be shown
-if (window.matchMedia('(display-mode: standalone)').matches) {
-    butInstall.classList.toggle('hidden', false);
-} 
