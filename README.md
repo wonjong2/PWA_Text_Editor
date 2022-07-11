@@ -73,9 +73,13 @@ On the command prompt :
     THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
 
 `Deployed URL: `https://texteditor-pwa-wonjong.herokuapp.com/
+
 ![beforeInstall](./images/before_Install.png)
+
 ![installPrompt](./images/prompt.png)
+
 ![installedApp](./images/installed_app.png)
+
 ![appIcon](./images/app_icon_desktop.png)
 
 ## License
